@@ -1,10 +1,12 @@
 <template>
-    <div>Show</div>
-    <Link href="/">Main Page</Link>
-</template>
+    <div>
+      <ListingAddress :listing="listing" />
+    </div>
+  </template>
 
-<script setup>
-import { Link } from '@inertiajs/vue3'
-
-</script>
-
+  <script setup>
+  import ListingAddress from '@/Components/ListingAddress.vue'
+  defineProps({
+    listing: Object,
+  })
+  </script>
