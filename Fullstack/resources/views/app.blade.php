@@ -8,10 +8,11 @@
     <title>Larazillow</title>
     @routes
     @vite('resources/js/app.js')
+    @vite('resources/css/app.css')
     @inertiaHead
 </head>
 
-<body>
+<body class="bg-white dark:bg-gray-900">
     @inertia
 </body>
 
